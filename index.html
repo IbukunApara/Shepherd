@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tobi Oladuja - Graphic & Brand Designer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/svg+xml" href="To_Favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <!-- Signature scroll rail: dashed line + paper plane -->
+    <div class="scroll-rail" aria-hidden="true">
+      <svg
+        width="24"
+        height="100%"
+        viewBox="0 0 24 520"
+        preserveAspectRatio="none"
+      >
+        <path id="railPath" class="rail-track" d="M12,4 L12,516" />
+        <path
+          id="railProgress"
+          class="rail-progress"
+          d="M12,4 L12,516"
+          stroke-dasharray="1 7"
+          pathLength="100"
+          stroke-dashoffset="100"
+        />
+      </svg>
+      <svg
+        id="planeSvg"
+        width="18"
+        height="30"
+        viewBox="0 0 18 30"
+        style="position: absolute; left: 3px; top: 4px"
+      >
+        <rect
+          x="1"
+          y="1"
+          width="16"
+          height="28"
+          rx="8"
+          fill="none"
+          stroke="var(--lime)"
+          stroke-width="1.6"
+        />
+        <g id="mouseInner">
+          <ellipse cx="9" cy="9" rx="2.2" ry="3.2" fill="var(--lime)" />
+          <path
+            d="M9 16 L9 24 M5.5 20.5 L9 24 L12.5 20.5"
+            fill="none"
+            stroke="var(--lime)"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <!-------------------------------------------------------- Sticky Top Nav -------------------------------------->
+    <header class="topnav">
+      <div class="wrap">
+        <a href="#top" class="logo">
+          <span class="logo-mark">TO</span>
+          <span class="logo-text">Tobi Oladuja</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Menu">
+          <a href="#about" class="nav-item">About</a>
+          <a href="#work" class="nav-item">Work</a>
+          <a href="#process" class="nav-item">Process</a>
+          <a href="#testimonials" class="nav-item">Testimonials</a>
+          <a href="#contact" class="nav-item">Contact</a>
+          <div class="nav-theme">
+            <span class="nav-theme-label">Theme</span>
+            <button
+              class="theme-toggle theme-toggle--menu"
+              aria-label="Toggle Color Theme"
+              type="button"
+            >
+              <img class="theme-toggle-img" src="off-button.png" alt="Switch Theme" />
+            </button>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle Color Theme"
+            type="button"
+          >
+            <img
+              id="themeToggleImg"
+              class="theme-toggle-img"
+              src="off-button.png"
+              alt="Switch Theme"
+            />
+          </button>
+          <a href="#contact" class="nav-cta"
+            >Let's talk <span aria-hidden="true">→</span></a
+          >
+          <button
+            class="mobile-toggle"
+            id="mobileToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="hamburger" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-------------------------------------------------------- Main Section ---------------------------------------->
+    <main id="top">
+      <!------------------------------- ID Card & Hero Main --------------------------->
+      <section class="hero wrap" id="hero">
+        <div class="hero-grid">
+          <!-- ID Card -->
+          <div class="id-card reveal">
+            <div class="blob blob-lime float-a"></div>
+            <span class="avail-pill"><span class="dot"></span>Available</span>
+
+            <div class="portrait">
+              <img
+                src="Tobi Oladuja.png"
+                alt="Portrait photo of Tobi Oladuja"
+              />
+            </div>
+
+            <h2 class="id-name">Tobi Oladuja</h2>
+            <p class="id-role">Graphics Designer</p>
+            <div class="id-meta">
+              <span>Tobioladuja@gmail.com</span>
+              <span>Based In Lagos Nigeria</span>
+            </div>
+
+            <div class="id-socials">
+              <a
+                href="https://x.com/tobioladuja"
+                aria-label="X (Twitter)"
+                target="_blank"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4h-2l12.3 16z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.behance.net/oluwatooladuja"
+                aria-label="Behance"
+                target="_blank"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M2 6h6.6c3.6 0 4.9 1.7 4.9 3.7 0 1.4-.7 2.4-1.9 2.9 1.6.4 2.6 1.6 2.6 3.4 0 2.6-2 4-5.5 4H2V6zm3 5.6h3c1.3 0 2-.6 2-1.7s-.7-1.6-2-1.6H5v3.3zm0 5.9h3.2c1.5 0 2.3-.7 2.3-1.9s-.8-1.9-2.3-1.9H5v3.8zM16 6.9h6v1.5h-6zM22.7 15c0-3.1-1.9-5.3-5-5.3-3 0-5.1 2.2-5.1 5.4 0 3.3 2 5.3 5.2 5.3 2.4 0 4.1-1.1 4.7-3h-2.6c-.4.7-1.1 1.1-2.1 1.1-1.4 0-2.3-.9-2.5-2.4h7.4c0-.4.1-.7.1-1.1zm-7.4-1.2c.3-1.3 1.1-2 2.3-2 1.2 0 2 .8 2.1 2h-4.4z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/tobioladuja"
+                aria-label="instagram"
+                target="_blank"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.2" cy="6.8" r="1" /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/tobioladuja"
+                aria-label="LinkedIn"
+                target="_blank"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.75h3.4V21H3.3V8.75zm6.35 0h3.26v1.68h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.07 2.27 4.07 5.22V21h-3.4v-5.44c0-1.3-.02-2.96-1.8-2.96-1.81 0-2.09 1.41-2.09 2.87V21H9.65V8.75z"
+                  /></svg
+              ></a>
+            </div>
+
+            <a href="#contact" class="btn btn-primary id-cta"
+              >Get Started <span class="btn-icon" aria-hidden="true">↗</span></a
+            >
+            <a
+              href="Tobi Oladuja CV.pdf"
+              download
+              class="btn btn-ghost id-cta-secondary"
+              >Download CV <span class="btn-icon" aria-hidden="true">⬇</span></a
+            >
+          </div>
+
+          <!-- Hero Main -->
+          <div class="hero-main reveal">
+            <div class="blob blob-outline float-b"></div>
+            <div class="hero-topline">
+              <span id="clockline">Lagos, Nigeria · 12:36 AM</span>
+              <div class="icon-grid" aria-hidden="true">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                  <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                  <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="eyebrow hero-eyebrow">Introduction</p>
+            <h1 class="hero-headline">
+              Hi, I'm Tobi Oladuja a Graphics &
+              <span class="accent">Brand Designer</span> shaping ideas into
+              memorable visuals.
+            </h1>
+            <p class="hero-desc">
+              I create visual identities, illustrations, and brand experiences
+              with intention. Not just to look good, but to actually say
+              something. Every project gets careful attention to detail and a
+              clear point of view.
+            </p>
+
+            <div class="hero-tags">
+              <span class="tag">Brand Identity</span>
+              <span class="tag">Graphic Design</span>
+              <span class="tag">Art Direction</span>
+              <span class="tag">Digital Illustration</span>
+              <span class="tag">Visual Design</span>
+            </div>
+
+            <div class="hero-bottom">
+              <div class="stat-card">
+                <p class="eyebrow">Projects Shipped</p>
+                <p class="stat-num">120+</p>
+              </div>
+              <div class="stat-card">
+                <p class="eyebrow">Client Satisfaction</p>
+                <p class="stat-num">98%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- ABOUT ---------------------------------------->
+      <section class="section-pad wrap" id="about">
+        <div class="about-grid">
+          <div class="about-portrait reveal">
+            <img src="Tobi Oladuja.png" alt="Portrait photo of Tobi Oladuja" />
+          </div>
+
+          <div class="about-text reveal">
+            <p class="eyebrow">About</p>
+            <h2 class="section-title">
+              Turning bold brand ideas into visual systems people remember.
+            </h2>
+            <p>
+              I'm a Lagos-based Graphic Designer, Brand Designer, and Digital
+              Illustrator working independently and through
+              <strong>SHEPH3RD Design Studio</strong>. I help brands, startups,
+              and creative teams communicate clearly through identity design,
+              high-impact marketing assets, and expressive visual art.
+            </p>
+            <p>
+              I blend strategic thinking with strong visual style. From social
+              campaigns for tech and fintech to high-energy sports graphics and
+              custom illustrations, I create assets that are functional, sharp,
+              and built to drive real engagement.
+            </p>
+
+            <div class="about-stats">
+              <div>
+                <p class="num">7+</p>
+                <p class="label">Years Active</p>
+              </div>
+              <div>
+                <p class="num">100+</p>
+                <p class="label">Projects Delivered</p>
+              </div>
+              <div>
+                <p class="num">3</p>
+                <p class="label">Core Disciplines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- CLIENTS ---------------------------------------->
+      <section class="section-pad wrap" id="clients">
+        <div class="section-head reveal">
+          <h2 class="section-title">Companies I've worked with.</h2>
+          <p class="section-sub">
+            A few of the teams and brands I've partnered with.
+          </p>
+        </div>
+
+        <div class="clients-row reveal">
+          <div class="client-logo">
+            <img src="northstar-logo.png" alt="NorthStar logo" />
+          </div>
+          <div class="client-logo">
+            <img src="checkers-logo.png" alt="Checkers logo" />
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- WORK ---------------------------------------->
+      <section class="section-pad wrap" id="work">
+        <div class="section-head reveal">
+          <h2 class="section-title">Selected Work</h2>
+          <p class="section-sub">
+            A handful of projects I'm proud to put my name on.
+          </p>
+        </div>
+        <div class="work-grid">
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/Bridge Finance/Bridge_1.webp, Shepherd Work/Bridge Finance/Bridge_2.webp, Shepherd Work/Bridge Finance/Bridge_3.webp, Shepherd Work/Bridge Finance/Bridge_4.webp, Shepherd Work/Bridge Finance/Bridge_5.webp"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/Bridge Finance/Bridge_1.webp"
+                alt="Bridge Finance"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Fintech · App</p>
+              <p class="work-name">Bridge Finance</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/Chowdeck/Chowdeck_1.jpg, Shepherd Work/Chowdeck/Chowdeck_2.jpg, Shepherd Work/Chowdeck/Chowdeck_3.jpg, Shepherd Work/Chowdeck/Chowdeck_4.jpg, Shepherd Work/Chowdeck/Chowdeck_5.jpg, Shepherd Work/Chowdeck/Chowdeck_6.jpg, Shepherd Work/Chowdeck/Chowdeck_7.jpg"
+          >
+            <div class="work-thumb">
+              <img src="Shepherd Work/Chowdeck/Chowdeck_1.jpg" alt="Chowdeck" />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Food Delivery · Brand</p>
+              <p class="work-name">Chowdeck</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/Corper Shun/corper_shun_1.jpg, Shepherd Work/Corper Shun/corper_shun_2.jpg, Shepherd Work/Corper Shun/corper_shun_3.jpg"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/Corper Shun/corper_shun_1.jpg"
+                alt="Corper Shun"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">A Life Window of Escapism.</p>
+              <p class="work-name">Corper Shun</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/DESERTED/Deserted.jpg"
+          >
+            <div class="work-thumb">
+              <img src="Shepherd Work/DESERTED/Deserted.jpg" alt="Deserted" />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Poster Art</p>
+              <p class="work-name">Deserted</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/EASY BUCKETS/Easy_buckets.jpg"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/EASY BUCKETS/Easy_buckets.jpg"
+                alt="Easy Buckets"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Poster Art</p>
+              <p class="work-name">Easy Buckets</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/ECHOES OF THE SAHEL/Echoes.jpg"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/ECHOES OF THE SAHEL/Echoes.jpg"
+                alt="Echoes of the Sahel"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Poster Art</p>
+              <p class="work-name">Echoes of the Sahel</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_1.jpg, Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_2.jpg, Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_3.jpg, Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_4.jpg, Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_5.jpg"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/Logo Breakdown for Bridge Finance/Bridge_logo_1.jpg"
+                alt="Bridge Logo Breakdown"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Branding</p>
+              <p class="work-name">Bridge Logo Breakdown</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="work-card reveal"
+            data-img="Shepherd Work/THREADS OF TRADITION WOVEN TOGETHER IN HARMONY/Threads_1.webp, Shepherd Work/THREADS OF TRADITION WOVEN TOGETHER IN HARMONY/Threads_2.webp, Shepherd Work/THREADS OF TRADITION WOVEN TOGETHER IN HARMONY/Threads_3.webp, Shepherd Work/THREADS OF TRADITION WOVEN TOGETHER IN HARMONY/Threads_4.webp"
+          >
+            <div class="work-thumb">
+              <img
+                src="Shepherd Work/THREADS OF TRADITION WOVEN TOGETHER IN HARMONY/Threads_1.webp"
+                alt="Threads of Tradition"
+              />
+            </div>
+            <div class="work-overlay">
+              <p class="work-tag">Culture · Design</p>
+              <p class="work-name">Threads of Tradition</p>
+            </div>
+            <span class="work-expand" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- Process ---------------------------------------->
+      <section class="section-pad wrap" id="process">
+        <div class="section-head reveal">
+          <h2 class="section-title">How a project moves.</h2>
+          <p class="section-sub">
+            Four stages, always in this order, rarely in a straight line.
+          </p>
+        </div>
+
+        <div class="process-strip reveal">
+          <div class="process-step">
+            <p class="process-num">01</p>
+            <h3>Discover</h3>
+            <p>
+              Interviews, audits, and a clear list of the problems worth solving
+              first.
+            </p>
+          </div>
+          <div class="process-step">
+            <p class="process-num">02</p>
+            <h3>Design</h3>
+            <p>
+              Wireframes to high-fidelity screens, tested against the goals from
+              step one.
+            </p>
+          </div>
+          <div class="process-step">
+            <p class="process-num">03</p>
+            <h3>Test</h3>
+            <p>
+              Real users, real tasks, and honest notes on what still doesn't
+              work.
+            </p>
+          </div>
+          <div class="process-step">
+            <p class="process-num">04</p>
+            <h3>Deliver</h3>
+            <p>
+              Developer-ready files, documentation, and support through launch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- Testimonials ---------------------------------------->
+      <section class="section-pad wrap" id="testimonials">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Client Feedback</p>
+            <h2 class="section-title" style="margin-top: 12px">
+              Kind words from past collaborators.
+            </h2>
+          </div>
+          <p class="section-sub">
+            A few genuine reactions from founders, creative directors, and brand
+            leads.
+          </p>
+        </div>
+
+        <div class="test-grid">
+          <div class="test-card reveal">
+            <div class="test-quote">
+              <p>
+                "Tobi took a loose concept and translated it into a complete
+                visual system. Our brand presence immediately felt refined and
+                intentional."
+              </p>
+            </div>
+            <div class="test-who">
+              <div class="test-avatar"><span>FO</span></div>
+              <div>
+                <p class="test-name">Femi Olamide</p>
+                <p class="test-role">Co-Founder, Bridge Finance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-card reveal">
+            <div class="test-quote">
+              <p>
+                "Working with Tobi on our campaign assets was effortless. The
+                art direction was sharp, delivered on time, and exceeded our
+                visual expectations."
+              </p>
+            </div>
+            <div class="test-who">
+              <div class="test-avatar"><span>AA</span></div>
+              <div>
+                <p class="test-name">Aisha Bello</p>
+                <p class="test-role">Marketing Lead, Chowdeck</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-card reveal">
+            <div class="test-quote">
+              <p>
+                "His custom artwork and poster concepts gave our release the
+                distinct identity it needed. High attention to detail and zero
+                friction."
+              </p>
+            </div>
+            <div class="test-who">
+              <div class="test-avatar"><span>DA</span></div>
+              <div>
+                <p class="test-name">David Adebayo</p>
+                <p class="test-role">Creative Director, SHEPH3RD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------------------- CONTACT ---------------------------------------->
+      <section class="section-pad wrap" id="contact">
+        <div class="contact-panel reveal">
+          <div class="blob blob-lime float-a"></div>
+          <div class="blob blob-outline float-b"></div>
+          <div class="contact-grid">
+            <div>
+              <p class="eyebrow">Get in touch</p>
+              <h2 class="contact-title" style="margin-top: 16px">
+                Let's work <span class="accent">together</span>.
+              </h2>
+              <p class="contact-text">
+                Have a product that needs to feel simpler? Tell me what you're
+                building and I'll get back within a day.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:oladujaoluwatobi@gmail.com"
+                  >oladujaoluwatobi@gmail.com</a
+                >
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                  >Instagram</a
+                >
+                <a href="https://behance.net" target="_blank" rel="noopener"
+                  >Behance</a
+                >
+              </div>
+            </div>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+              id="contactForm"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="e9a59b67-0d18-44da-8bc6-efa104358db8"
+              />
+
+              <div class="field">
+                <label for="cname">Name</label>
+                <input
+                  id="cname"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cemail">Email</label>
+                <input
+                  id="cemail"
+                  name="email"
+                  type="email"
+                  placeholder="your@gmail.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="cmsg">Project</label>
+                <textarea
+                  name="message"
+                  id="cmsg"
+                  rows="4"
+                  placeholder="A little about what you're building"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" id="submitBtn" class="btn btn-primary">
+                Send message <span class="btn-icon" aria-hidden="true">↗</span>
+              </button>
+              <p class="form-note" id="formNote">I'll reply within 24 hours.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <div class="footer-grid">
+        <a href="#top" class="logo"><span class="logo-mark">T</span>Tobi</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a
+            href="https://x.com/tobioladuja"
+            aria-label="X (Twitter)"
+            target="_blank"
+            ><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4h-2l12.3 16z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.behance.net/oluwatooladuja"
+            aria-label="Behance"
+            target="_blank"
+            ><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M2 6h6.6c3.6 0 4.9 1.7 4.9 3.7 0 1.4-.7 2.4-1.9 2.9 1.6.4 2.6 1.6 2.6 3.4 0 2.6-2 4-5.5 4H2V6zm3 5.6h3c1.3 0 2-.6 2-1.7s-.7-1.6-2-1.6H5v3.3zm0 5.9h3.2c1.5 0 2.3-.7 2.3-1.9s-.8-1.9-2.3-1.9H5v3.8zM16 6.9h6v1.5h-6zM22.7 15c0-3.1-1.9-5.3-5-5.3-3 0-5.1 2.2-5.1 5.4 0 3.3 2 5.3 5.2 5.3 2.4 0 4.1-1.1 4.7-3h-2.6c-.4.7-1.1 1.1-2.1 1.1-1.4 0-2.3-.9-2.5-2.4h7.4c0-.4.1-.7.1-1.1zm-7.4-1.2c.3-1.3 1.1-2 2.3-2 1.2 0 2 .8 2.1 2h-4.4z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.instagram.com/tobioladuja"
+            aria-label="instagram"
+            target="_blank"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.2" cy="6.8" r="1" /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/tobioladuja"
+            aria-label="LinkedIn"
+            target="_blank"
+            ><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.75h3.4V21H3.3V8.75zm6.35 0h3.26v1.68h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.07 2.27 4.07 5.22V21h-3.4v-5.44c0-1.3-.02-2.96-1.8-2.96-1.81 0-2.09 1.41-2.09 2.87V21H9.65V8.75z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © 2026 Tobi Oladuja. All rights reserved. Designed &amp; built with
+        care.
+      </p>
+    </footer>
+
+    <!---------------------------------------------------------------- Work Lightbox ------------------------------------------------------------->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <figure class="lightbox-figure">
+        <div class="lightbox-frame" id="lightboxFrame"></div>
+        <figcaption class="lightbox-caption">
+          <p class="lightbox-tag" id="lightboxTag"></p>
+          <p class="lightbox-name" id="lightboxName"></p>
+        </figcaption>
+      </figure>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

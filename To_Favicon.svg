@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Dark/Light Theme Support -->
+    <style>
+      .bg-blob { fill: #c4e93a; }
+      .text-mark { fill: #0d211a; }
+    </style>
+  </defs>
+
+  <!-- Organic Logo Mark Blob (Matching .logo-mark CSS border-radius) -->
+  <path class="bg-blob" d="M 51.2,256 
+           C 51.2,128 128,51.2 256,51.2 
+           C 358.4,51.2 460.8,115.2 460.8,230.4 
+           C 460.8,345.6 371.2,460.8 256,460.8 
+           C 128,460.8 51.2,358.4 51.2,256 Z" />
+
+  <!-- Outlined "TO" Vector Typography -->
+  <g class="text-mark">
+    <!-- T -->
+    <path d="M 112 180 H 228 V 218 H 189 V 332 H 151 V 218 H 112 Z" />
+    
+    <!-- O -->
+    <path d="M 315 176 C 361 176 396 209 396 256 C 396 303 361 336 315 336 C 269 336 234 303 234 256 C 234 209 269 176 315 176 Z M 315 212 C 290 212 272 230 272 256 C 272 282 290 300 315 300 C 340 300 358 282 358 256 C 358 230 340 212 315 212 Z" />
+  </g>
+</svg>
